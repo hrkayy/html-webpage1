@@ -1,0 +1,194 @@
+/* ===== Global Styles ===== */
+body {
+    margin: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-image: url("https://0e9d299e890b0f46f43d-3dd2c92c26268727c0280f27b5b17857.ssl.cf1.rackcdn.com/responsive/4:3/Native/u/spa/s_spa_towels_and_stones.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    color: white;
+}
+
+/* ===== Header & Navigation ===== */
+header {
+    background-color: rgba(0,0,0,0.6);
+    padding: 15px;
+    text-align: center;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2rem;
+    color: white;
+}
+
+nav {
+    margin-top: 10px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin: 0 15px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+nav a:hover {
+    text-decoration: underline;
+    color: #ffd6ff;
+}
+
+/* ===== Home Page ===== */
+.container {
+    text-align: center;
+    padding: 30px;
+}
+
+.cards-container {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+
+.card {
+    width: 260px;
+    background-color: rgba(0, 0, 0, 0.5);
+    border-radius: 10px;
+    box-shadow: 0 6px 12px rgba(0,0,0,0.3);
+    overflow: hidden;
+}
+
+.card-header {
+    padding: 20px;
+}
+
+.card-header h2 {
+    margin: 0;
+}
+
+ul {
+    list-style: none;
+    padding: 0 20px;
+}
+
+ul li {
+    border-bottom: 1px dashed rgba(255,255,255,0.4);
+    padding: 10px 0;
+}
+
+/* ===== Buttons ===== */
+.buy-btn {
+    display: inline-block;
+    margin: 20px;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    color: white;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.bridal-header { background-color: #7930FC; }
+.stay-header { background-color: #00CC66; }
+.ultimate-header { background-color: #E91E63; }
+
+.bridal-btn { background-color: #7930FC; }
+.stay-btn { background-color: #00CC66; }
+.ultimate-btn { background-color: #E91E63; }
+
+.buy-btn:hover {
+    opacity: 0.8;
+    transform: scale(1.05);
+}
+
+/* ===== Booking Page ===== */
+.form-container {
+    width: 90%;
+    max-width: 400px;
+    background-color: rgba(0, 0, 0, 0.6);
+    margin: 40px auto;
+    padding: 25px;
+    border-radius: 10px;
+}
+
+label {
+    display: block;
+    margin-top: 10px;
+    font-weight: bold;
+}
+
+input, select, textarea {
+    width: 100%;
+    padding: 8px;
+    margin-top: 5px;
+    border: none;
+    border-radius: 5px;
+}
+
+/* ===== Thank You Page ===== */
+.thankyou-container {
+    text-align: center;
+    margin-top: 100px;
+}
+
+.thankyou-container h2 {
+    font-size: 1.8rem;
+}
+
+.thankyou-container p {
+    margin: 15px auto;
+    width: 80%;
+    line-height: 1.6;
+}
+
+/* ===== Contact Us Page ===== */
+.contact-container {
+    width: 90%;
+    max-width: 700px;
+    margin: 50px auto;
+    background-color: rgba(0, 0, 0, 0.6);
+    border-radius: 10px;
+    padding: 30px;
+    text-align: center;
+    line-height: 1.8;
+}
+
+.contact-container h2 {
+    margin-bottom: 10px;
+    font-size: 1.8rem;
+}
+
+.contact-container p {
+    font-size: 1rem;
+}
+
+.contact-info {
+    text-align: left;
+    margin-top: 20px;
+    font-size: 1rem;
+}
+
+.contact-info p {
+    margin: 8px 0;
+}
+
+/* ===== Responsive ===== */
+@media (max-width: 600px) {
+    .cards-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .card {
+        width: 90%;
+    }
+
+    nav a {
+        display: inline-block;
+        margin: 5px;
+    }
+}
